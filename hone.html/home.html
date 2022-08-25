@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div id="container">
+        <div>
+     <a href="">
+      <img src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png" alt="">
+     </a>
+    </div>
+     <div>
+      <a href="">
+        <i class="fa fa-map-marker" style="font-size:20px ; color:rgb(255, 31, 147);"></i>  Store Location
+      </a>
+    </div>
+    <div>
+      <a href="">
+          <span id="color"> * * *</span> Get 10 % OFF on your first purchase.Use Code   <span id="color">* * *</span> <br> <span style="margin-left:40%;">BEAUTY10</span> 
+      </a>
+    </div>
+    <div>
+      <a href="">
+        <i class="fa fa-mobile" style="font-size:20px; color:rgb(255, 31, 147);"></i>    Get APP
+      </a>
+    </div>
+    <div>
+        <a href="">
+            <i class='fa fa-cube' style="font-size:20px; color: rgb(255, 31, 147);"></i> Track Order
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <i class="fa fa-trophy" aria-hidden="true"style="font-size:20px; color: rgb(255, 31, 147);"></i>  Loyalty
+        </a>
+    </div>
+    </div>
+
+    <br>
+    <div id="container2">
+    <div class="srcha"> 
+        <i class="fa fa-search" aria-hidden="true"style="font-size:24px;color: rgb(255, 31, 147);margin-left:20px"></i>   <input type="text" placeholder="Search SEPHORA" id="srch">
+    </div>
+
+     <div>
+        <img src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt="">
+    </div>
+
+     <div id="icon">
+       <a href="index.html">   <div class="love" ><i class="fa fa-heart" aria-hidden="true"style="font-size:24px" ></i></div> </a>
+       <a href="index.html"><div     class="bag"><i class="fa fa-shopping-bag" aria-hidden="true"style="font-size:24px"></i></div></a> 
+    <a href="index.html"><div class="person"><i class="fa fa-user" style="font-size:24px"></i> <span style="color:black ;">Login</span></div></a>   
+
+     </div>
+
+    </div>
+
+    <div class="text">
+
+         <a href="">SALE</a> 
+         <a href="">MAKEUP</a> 
+          <a href="">SKINCARE</a> 
+         <a href="">FRAGRANCE</a>  
+         <a href="">HAIRCARE</a> 
+          <a href="">TOOLS & BRUSHES</a> 
+         <a href="">BRANDS</a> 
+    </div>
+    <hr style="color:rgb(248, 241, 241) ;">
+
+    <div id="second_nav">
+        <div id="tags">
+            <a href="women.html">SHOP All</a>
+            <a href="men.html">CLOTHING</a>
+            <a href="">BAGS</a>
+            <a href="">SHOES</a>
+            <a href="">GROOMING</a>
+            <a href="">SALE</a>
+            <a href="">PRE-OWINED</a>
+            <a href="">OCCASION</a>
+        </div>
+    </div>
+</div>
+
+    <div id="nav_container"></div>
+  
+</body>
+</html>
+
+<script type="module">
+
+import navbar from './components/navbar.js';
+console.log('navbar:',navbar)
+
+let container = document.getElementById("nav_container")
+container.innerHTML = navbar()
+
+</script>
