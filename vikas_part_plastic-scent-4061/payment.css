@@ -95,7 +95,7 @@ border: 2px solid black;
     width: 100%;
     
 }
-#checkout{
+#placeOrder{
 display: block;
 width: 100%;
 padding: 20px 50px;
@@ -163,4 +163,19 @@ border: 2px solid teal;
 }
 #buttonDiv:hover{
     background-color:whitesmoke;
+}
+
+#editbtn{
+    width: 100%;
+    padding: 15px 200px;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-top: 0.5px solid;
+  border-bottom: 0.5px solid;
+    
+}
+
+#editbtn:hover{
+    color: #ff3399;
 }

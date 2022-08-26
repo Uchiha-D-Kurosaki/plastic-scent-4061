@@ -1,4 +1,4 @@
- let data=[
+let data=[
     {
         img1:"https://cdn04.nnnow.com/web-images/medium/styles/E8MATF2IDYU/1605084283131/1.jpg",
         img2:"https://cdn07.nnnow.com/web-images/medium/styles/E8MATF2IDYU/1605084283128/2.jpg",
@@ -28,7 +28,8 @@
 console.log(data)
 
 let count=0;
-let sum=0
+let sum=0;
+
 let overview=document.getElementById("overview")
  let   cotainerLeft=  document.getElementById('cotainerLeft')
 
@@ -85,7 +86,11 @@ count++
 
 })
 
+ let editbtn=document.createElement("button")
+ editbtn.innerText="EDIT BAG"
 
+ editbtn.setAttribute("id","editbtn")
+ cotainerLeft.append(editbtn)
 
 
 }
@@ -95,20 +100,10 @@ leftappend(data)
 
 
 
-
-
-
-
 let pink ="#ff3399";
-
 let bagcout=document.querySelector("#myBag>h1")
-
-bagcout.innerText=`MY BAG (${count})`
-
-
+bagcout.innerText=`CHECKOUT`
 console.log(sum)
-
-
 
 
 
@@ -195,9 +190,14 @@ div5.append(h2,newh2)
  //   window.location.href=""
  })
 
- let checkoutbtn=document.querySelector("#checkout")
- checkoutbtn.addEventListener("click",function(){
+ let continuebtn=document.querySelector("#continue")
+ continuebtn.addEventListener("click",function(){
 
-    window.location.href="./checkout.html"
+    window.location.href="./payment.html"
+ })
+
+ let editbtn=document.querySelector("#editbtn");
+ editbtn.addEventListener("click",function(){
+    window.location.href="./cart.html"
  })
 
