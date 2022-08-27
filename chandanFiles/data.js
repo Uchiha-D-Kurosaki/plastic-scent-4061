@@ -233,7 +233,8 @@ function append(data){
     
      cart.innerText="SHOP NNNOW"
      let cartimg=document.createElement("img")
-     cartimg.src="https://cdn-icons-png.flaticon.com/128/2662/2662503.png"
+     cartimg.setAttribute=("class","add")
+     cartimg.src="https://cdn-icons-png.flaticon.com/128/737/737035.png"
    
      cart.onclick=function(){
     
@@ -243,8 +244,13 @@ function append(data){
 
 
     let fav=document.createElement("div");
+  
+ 
 
     fav.innerText="FAVORITE"
+    let favItem=document.createElement("img")
+    favItem.src="https://cdn-icons-png.flaticon.com/128/8184/8184221.png"
+    favItem.setAttribute=("class","add")
 
      fav.onclick=function(){
         addToFav(el)
@@ -255,7 +261,7 @@ function append(data){
 
 
 
-    hiddenDiv.append(cart,cartimg,fav)
+    hiddenDiv.append(cartimg,cart,fav, favItem)
 
 
 
