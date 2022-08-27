@@ -1,7 +1,7 @@
 #cartNav{
     display: flex;
     height: 100px;
-    border: 1px solid teal;
+  
 justify-content: space-around;
 align-items: center;
     
@@ -11,7 +11,7 @@ align-items: center;
 
 #buttonDiv{
     display: flex;
-    border: 2px solid ;
+   
 height: 100%;
 justify-content: center;
 align-items: center;
@@ -43,7 +43,7 @@ margin-left: 400px;
 
 #container{
     width: 80%;
-    border: 5px solid blue;
+   
   display: flex;
     margin: auto;
     margin-top: 30px;
@@ -55,21 +55,21 @@ margin-left: 400px;
 }
 #cotainerLeft{
 width: 55%;
-border: 5px solid rebeccapurple;
+
 height: 40%;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 #containerRight{
 height: 100%;
 width: 35%;
-border: 5px solid black;
+
 }
 #promocode{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
-    border: 1px solid rgb(185, 33, 58);
+    
     background-color: #f2f2f2;
     margin-bottom: 40px;
     cursor: pointer;
@@ -136,7 +136,7 @@ cursor: pointer;
     width: 150px;
 }
 #card>div{
-border: 2px solid teal;
+
 }
 
 #div1{
@@ -208,7 +208,7 @@ padding: 10px 20px;
 #debitCard{
     display: flex;
 flex-direction: column;
-    border: 2px solid teal;
+    
     width: 30%;
     margin: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

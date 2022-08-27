@@ -208,7 +208,7 @@ div5.append(h2,newh2)
 
  buttonDiv.addEventListener("click",function(){
 
- //   window.location.href=""
+    window.location.href="../SignUp-SignIn/signIn.html"
  })
 
  let checkoutbtn=document.querySelector("#checkout")
