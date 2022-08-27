@@ -112,7 +112,7 @@ let overview=document.getElementById("overview")
 
     sum=sum-(Math.floor(sum/100*20));
 
-    
+alert("20% Didcout Apply")
     rightAppend(sum)
     
 
