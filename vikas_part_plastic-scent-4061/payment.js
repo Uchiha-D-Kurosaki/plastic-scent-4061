@@ -1,5 +1,14 @@
+let sum;
+//let data =JSON.parse( localStorage.getItem("sum"))
 
-let sum=1500;
+
+
+//sum=Number(data)
+
+sum=800
+
+
+
 
 let pink ="#ff3399";
 
@@ -8,6 +17,7 @@ let overview=document.getElementById("overview")
 
 
  function rightAppend(sum){
+   overview.innerHTML=null;
 
     let h1=document.createElement("h1")
     h1.innerText="OVERVIEW";
@@ -97,5 +107,14 @@ let overview=document.getElementById("overview")
 
         window.location.href="./index.html"
      })
+    let promocode=document.getElementById("promocode")
+    promocode.addEventListener("click",function(){
+
+    sum=sum-(Math.floor(sum/100*20));
+
     
+    rightAppend(sum)
+    
+
+    })
     

@@ -46,7 +46,7 @@ margin-left: 400px;
     border: 1px solid blue;
     margin: auto;
     
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 #container{
@@ -163,4 +163,11 @@ border: 2px solid teal;
 }
 #buttonDiv:hover{
     background-color:whitesmoke;
+}
+#removeBtn{
+    border: none;
+    cursor: pointer;
+    border-bottom: 0.7px  solid rgb(169, 168, 168);
+    padding: 02px 30px;
+
 }

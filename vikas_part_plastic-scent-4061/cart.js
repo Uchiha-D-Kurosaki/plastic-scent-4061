@@ -25,17 +25,20 @@
 
 ];
 
+let sum=0;
+
 console.log(data)
 
 let count=0;
-let sum=0
+
 let overview=document.getElementById("overview")
  let   cotainerLeft=  document.getElementById('cotainerLeft')
 
 
 function leftappend(data){
-
-data.forEach(function(el){
+    cotainerLeft.innerHTML=null;
+     
+data.forEach(function(el,i){
 
 let imgtag1 =document.createElement("img")
 imgtag1.src=el.img1
@@ -46,6 +49,19 @@ let h3=document.createElement("h3")
 h3.innerText=el.name;
 let p1=document.createElement("p")
 p1.innerText=el.titile;
+let removeBtn=document.createElement("button")
+removeBtn.innerText="Remove"
+removeBtn.setAttribute("id","removeBtn")
+removeBtn.addEventListener("click",function(){
+    console.log("okremove")
+ let x=data.splice(i,1)
+leftappend(data)
+
+console.log(x)
+sum=sum-x[0].price
+rightAppend(sum)
+    
+})
 
 let h2=document.createElement("h2")
 h2.innerText=` Rs. ${el.price}`
@@ -71,7 +87,7 @@ sel.add(opn2,2)
  let div1=document.createElement("div")
 div1.append(imgtag1)
  let div2=document.createElement("div")
-div2.append(h3,p1)
+div2.append(h3,p1,removeBtn)
 
  let div3=document.createElement("div")
  div3.append(h2)
@@ -114,7 +130,7 @@ console.log(sum)
 
 
  function rightAppend(sum){
-
+    overview.innerHTML=null;
 let h1=document.createElement("h1")
 h1.innerText="OVERVIEW";
 
@@ -201,3 +217,10 @@ div5.append(h2,newh2)
     window.location.href="./checkout.html"
  })
 
+ let shopMore=document.getElementById("shopMore");
+
+ shopMore.addEventListener("click",function(){
+
+
+    window.location.href=""
+ })
