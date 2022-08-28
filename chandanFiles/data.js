@@ -309,7 +309,7 @@ function append(data){
 append(data)
 
 let cart=JSON.parse(localStorage.getItem("data"))||[];
-
+console.log(cart)
 function addToCart(el){
     console.log(el)
     cart.push(el);
