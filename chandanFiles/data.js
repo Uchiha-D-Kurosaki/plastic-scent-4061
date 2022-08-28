@@ -1,4 +1,4 @@
-data=[
+ let data=[
     {
         img1:"https://cdn04.nnnow.com/web-images/medium/styles/E8MATF2IDYU/1605084283131/1.jpg",
         img2:"https://cdn07.nnnow.com/web-images/medium/styles/E8MATF2IDYU/1605084283128/2.jpg",
@@ -313,6 +313,7 @@ let cart=JSON.parse(localStorage.getItem("data"))||[];
 function addToCart(el){
     console.log(el)
     cart.push(el);
+    console.log(cart)
    localStorage.setItem("data",JSON.stringify(cart))
 }
 
@@ -323,6 +324,8 @@ function addToFav(el){
     favarr.push(el);
     localStorage.setItem("fav",JSON.stringify(favarr));
 }
+
+
 
 
 
@@ -363,4 +366,11 @@ function sort(){
 // //     append(data)
    
 // }
+import navbar from '../hone.html/components/navbar.js';
+console.log('navbar:',navbar)
 
+// vaha se hata ke div container navbar ke liye or footercontainer footer ke liye 
+
+
+let container1 = document.getElementById("navbar1")
+container1.innerHTML = navbar()

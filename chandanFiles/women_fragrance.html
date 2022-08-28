@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="../hone.html/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
 
@@ -134,9 +134,16 @@
         height: 10px;
         width: 10px;
        } 
+
+       a{
+        text-decoration: none;
+       }
     </style>
 </head>
 <body>
+
+<div id="navbar1"></div>
+
     <div id="upperdiv1">
         <div><input type="text" placeholder="Search SEPHORA"/></div>
         <div><img id="sephoralogo" src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt="SEPHORA"></div>
@@ -146,17 +153,18 @@
                 </span></div>
             <div>|</div>
             <div><span class="material-symbols-outlined">
-                shopping_bag
+                <a href="../vikas_part_plastic-scent-4061/cart.html">shopping_bag </a>
                 </span></div>
             <div>|</div>
             <div><span class="material-symbols-outlined">
-                person
+                
+                <a href="../SignUp-SignIn/signUp.html">person</a>
                 </span></div>
         </div>
  
         
     </div>
-    <div id="upperdiv2"">
+    <div id="upperdiv2">
         <h3>SALE</h3>
         <h3>MAKEUP</h3>
         <h3>SKINCARE</h3>
@@ -211,4 +219,14 @@
     </div>
 </body>
 </html>
-<script src="data.js"></script>
+<script  src="data.js" type="module">
+    
+// import navbar from './components/navbar.js';
+// console.log('navbar:',navbar)
+
+// // vaha se hata ke div container navbar ke liye or footercontainer footer ke liye 
+
+
+// let container1 = document.getElementById("navbar1")
+// container1.innerHTML = navbar()
+</script>
