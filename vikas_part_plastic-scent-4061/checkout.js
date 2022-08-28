@@ -1,30 +1,6 @@
-let data=[
-    {
-        img1:"https://cdn04.nnnow.com/web-images/medium/styles/E8MATF2IDYU/1605084283131/1.jpg",
-        img2:"https://cdn07.nnnow.com/web-images/medium/styles/E8MATF2IDYU/1605084283128/2.jpg",
-        titile:"Elizabeth Arden",
-        name:"Green Tea Scent Spray",
-        price:"2675",
-    },
-    {
-        img1:"https://cdn14.nnnow.com/web-images/medium/styles/GX1INCBAMS6/1487245292188/1.jpg",
-        img2:"https://cdn14.nnnow.com/web-images/medium/styles/GX1INCBAMS6/1487245292188/1.jpg",
-        titile:"DAVIDOFF",
-        name:"Cool Water Sea Rose Eau De Toilette",
-        price:"4600",
-    },
-    {
-        img1:"https://cdn06.nnnow.com/web-images/medium/styles/MI7U8R8C848/1580463748784/1.jpg",
-        img2:"https://cdn15.nnnow.com/web-images/medium/styles/MI7U8R8C848/1580463748782/2.jpg",
-        titile:"BURBERRY",
-        name:"Her Intense Eau De Parfum",
-        price:"8250",
-    },
-  
 
-
-];
-
+let data=JSON.parse(localStorage.getItem("data"))||[];
+console.log(data)
 console.log(data)
 
 let count=0;
@@ -103,7 +79,11 @@ leftappend(data)
 let pink ="#ff3399";
 let bagcout=document.querySelector("#myBag>h1")
 bagcout.innerText=`CHECKOUT`
-console.log(sum)
+console.log(sum);
+
+
+localStorage.setItem("sum",JSON.stringify(sum))
+
 
 
 
@@ -186,8 +166,8 @@ div5.append(h2,newh2)
  let buttonDiv=document.getElementById("buttonDiv")
 
  buttonDiv.addEventListener("click",function(){
-
- //   window.location.href=""
+    window.location.href="../signUp-SignIn/signIn.html"
+ 
  })
 
  let continuebtn=document.querySelector("#continue")
@@ -200,4 +180,13 @@ div5.append(h2,newh2)
  editbtn.addEventListener("click",function(){
     window.location.href="./cart.html"
  })
+
+
+ 
+let credentials=JSON.parse(localStorage.getItem("credentials"))
+console.log(credentials)
+
+ let displayUsername =document.getElementById("displayUsername");
+ displayUsername.innerText=credentials.email||"login";
+ 
 

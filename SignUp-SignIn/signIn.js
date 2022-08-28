@@ -13,10 +13,10 @@ function signIn(event){
         password:password,
     };
 
-    if(checkLoginCredentials(signInObj.email, signInObj.password)===true){
+    if(checkLoginCredentials(signInObj.emagitil, signInObj.password)===true){
         localStorage.setItem("credentials", JSON.stringify(signInObj));
         alert("Sign In Successfull :)");
-        window.location.href="index.html";
+      window.location.href="../hone.html/home.html"
     }
     else{
         alert("Wrong Credentials !!");
@@ -28,7 +28,10 @@ function signIn(event){
 function checkLoginCredentials(email, password){
     let filterEmailPassword=signInArray.filter(function(element){
         return element.email===email && element.password===password;
+        
     })
+
+    console.log(filterEmailPassword)
     if(filterEmailPassword.length>0) return true;
     else return false;
 }

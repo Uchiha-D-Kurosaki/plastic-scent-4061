@@ -4,8 +4,9 @@ let sum;
 
 
 //sum=Number(data)
+sum=JSON.parse(localStorage.getItem("sum"))||0;
+sum=Number(sum)
 
-sum=800
 
 
 
@@ -98,14 +99,14 @@ let overview=document.getElementById("overview")
     
      buttonDiv.addEventListener("click",function(){
     
-     //   window.location.href=""
+        window.location.href="../signUp-SignIn/signIn.html"
      })
     
      let placeOrder=document.querySelector("#placeOrder")
      placeOrder.addEventListener("click",function(){
     alert ("order sucessfull")
 
-        window.location.href="./index.html"
+        window.location.href="../hone.html/home.html"
      })
     let promocode=document.getElementById("promocode")
     promocode.addEventListener("click",function(){
@@ -117,4 +118,13 @@ alert("20% Didcout Apply")
     
 
     })
+
     
+let credentials=JSON.parse(localStorage.getItem("credentials"))
+console.log(credentials)
+
+ let displayUsername =document.getElementById("displayUsername");
+ displayUsername.innerText=credentials.email||"login";
+ 
+let amout=document.getElementById("amout")
+amout.innerText=`Rs. ${sum}`
