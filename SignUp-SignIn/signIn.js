@@ -13,7 +13,7 @@ function signIn(event){
         password:password,
     };
 
-    if(checkLoginCredentials(signInObj.emagitil, signInObj.password)===true){
+    if(checkLoginCredentials(signInObj.email, signInObj.password)===true){
         localStorage.setItem("credentials", JSON.stringify(signInObj));
         alert("Sign In Successfull :)");
       window.location.href="../hone.html/home.html"
